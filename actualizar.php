@@ -18,7 +18,6 @@ ENGINE=InnoDB
 */
 
 // ACTUALIZANDO
-	//$sql = "INSERT INTO miembro VALUES (NULL,'$codigo', '$nombres', '$apellidos','$documento', '$email','$categoria','$pago');";
 	$sql = "UPDATE participantes SET registrado=1 WHERE codigo='$codigo' ";
 	$qur = mysql_query($sql);	
 	if($qur){
