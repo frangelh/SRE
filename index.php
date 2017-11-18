@@ -1,6 +1,6 @@
 <html lang="es">
     <head>
-	    <meta charset="utf-8">
+	    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	    <title>Sistema de Registros de Eventos PUCMM</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,8 +24,8 @@
     <tr>
       <?php 
       include_once('confi.php');
-
-		$sql = 'SELECT codigo, nombres, apellidos, documento, email, categoria, pago, registrado FROM participantes ORDER BY codigo';
+		
+		$sql = 'SELECT codigo, nombres, apellidos, documento, email, categoria, pago, registrado FROM participantes ORDER BY codigo';		 
 
 		   $retval = mysql_query( $sql, $conn );
 		   

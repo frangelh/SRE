@@ -18,7 +18,7 @@ ENGINE=InnoDB
 */
 
 // ACTUALIZANDO
-	$sql = "UPDATE participantes SET registrado=1 WHERE codigo='$codigo' ";
+	$sql = "UPDATE participantes SET registrado=1 WHERE codigo='$codigo' AND registrado=0";
 	$qur = mysql_query($sql);	
 	if($qur){
 		$json = array("error" => false, "mensaje" => "Procesado Correctamente...");
